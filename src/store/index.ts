@@ -1,5 +1,5 @@
 import { createStore, applyMiddleware, compose, combineReducers } from "redux";
-//import { composeWithDevTools } from "redux-devtools-extension/developmentOnly";
+import { composeWithDevTools } from "redux-devtools-extension/developmentOnly";
 import logger from "redux-logger";
 import thunk from "redux-thunk";
 import games from "./reducers/games/games";
@@ -10,15 +10,9 @@ const rootReducer = combineReducers({
   aside,
 });
 
-const composeDevTools =
-  typeof window === "object" &&
-  (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
-    ? (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__()
-    : compose;
-
 export const store = createStore(
   rootReducer,
-  composeDevTools(applyMiddleware(thunk, logger))
+  composeWithDevTools(applyMiddleware(thunk, logger))
 );
 
 export type RootState = ReturnType<typeof store.getState>;

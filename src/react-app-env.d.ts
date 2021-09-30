@@ -1,5 +1,7 @@
 /// <reference types="react-scripts" />
 
-declare module "style-it" {
-  function it(style: string, elem: JSX.Element): JSX.Element {}
+declare global {
+  interface window {
+    __REDUX_DEVTOOLS_EXTENSION_COMPOSE__?: typeof compose;
+  }
 }

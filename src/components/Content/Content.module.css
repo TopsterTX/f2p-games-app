@@ -1,7 +1,7 @@
 .content {
     min-width: 100%;
     background-color: #111;
-    max-height: 100vh;
+    height: 100vh;
     border: 1px solid green;
     color: white;
     padding: 20px 0;
