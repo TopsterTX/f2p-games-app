@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import s from "./App.module.css";
+import { Header, Main, Aside } from "./containers";
+import { useTypedDispatch, useTypedSelector } from "./hooks";
+import { changeDisplayAside } from "./store/reducers/aside/asideActions";
 
-function App() {
+const App: React.FC<{}> = (): JSX.Element => {
+  const dispatch = useTypedDispatch();
+  const { isOpen } = useTypedSelector((state) => state.aside);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("lock");
+    } else {
+      document.body.classList.remove("lock");
+    }
+  }, [isOpen]);
+
+  function clickHandler(e: React.MouseEvent<HTMLDivElement>): void {
+    e.stopPropagation();
+
+    if (isOpen === true) dispatch(changeDisplayAside(false));
+    else return;
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={s.page} onClick={clickHandler}>
+      <Header />
+      <Main />
+      <Aside />
     </div>
   );
-}
+};
 
 export default App;

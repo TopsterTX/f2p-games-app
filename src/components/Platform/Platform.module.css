@@ -1,0 +1,29 @@
+.platform {
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid var(--white);
+    padding: 0 5px;
+    font-size: 11px;
+    text-decoration: none;
+    color: var(--white);
+    margin-top: 6px;
+}
+
+.platform:not(:last-child) {
+    margin-right: 5px;
+}
+
+.pc {
+    border: 1px solid var(--platform-pc);
+    color: var(--platform-pc);
+}
+
+.xbox {
+    border: 1px solid var(--platform-xbox);
+    color: var(--platform-xbox);
+}
+
+.ps {
+    border: 1px solid var(--platform-ps);
+    color: var(--platform-ps);
+}

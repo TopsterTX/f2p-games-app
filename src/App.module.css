@@ -1,0 +1,29 @@
+.page {
+    display: grid;
+    grid-template-areas:
+        'h h'
+        'm m'
+        'm m';
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr;
+    max-height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;
+}
+
+@media(min-width: 768px) {
+    .page {
+        grid-template-areas:
+            'a h h'
+            'a m m'
+            'a m m';
+        grid-template-columns: 200px 1fr;
+        grid-template-rows: 50px 1fr;
+    }
+}
+
+@media(min-width: 1050px) {
+    .page {
+        grid-template-columns: 300px 1fr;
+    }
+}

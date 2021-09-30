@@ -1,0 +1,35 @@
+.rating {
+    position: relative;
+    display: inline-flex;
+    margin-bottom: 5px;
+    max-width: fit-content;
+
+}
+
+.rating::after {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    content: attr(data-tooltip);
+    opacity: 0;
+    transition: 0.2s all;
+    visibility: hidden;
+    position: absolute;
+    bottom: 15px;
+    padding: 5px;
+}
+
+.rating:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.star {
+    fill: white;
+    width: 10px;
+    height: 10px;
+    margin-right: 2px;
+}
+
+.filled {
+    fill: rgb(223, 223, 65);
+}
