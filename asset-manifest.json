@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/games-app/static/css/main.975750cb.chunk.css",
-    "main.js": "/games-app/static/js/main.49e4b58c.chunk.js",
-    "main.js.map": "/games-app/static/js/main.49e4b58c.chunk.js.map",
+    "main.css": "/games-app/static/css/main.07cb4ac8.chunk.css",
+    "main.js": "/games-app/static/js/main.693765fc.chunk.js",
+    "main.js.map": "/games-app/static/js/main.693765fc.chunk.js.map",
     "runtime-main.js": "/games-app/static/js/runtime-main.41ef15c2.js",
     "runtime-main.js.map": "/games-app/static/js/runtime-main.41ef15c2.js.map",
-    "static/js/2.a56a2e9d.chunk.js": "/games-app/static/js/2.a56a2e9d.chunk.js",
-    "static/js/2.a56a2e9d.chunk.js.map": "/games-app/static/js/2.a56a2e9d.chunk.js.map",
+    "static/js/2.c15a79c3.chunk.js": "/games-app/static/js/2.c15a79c3.chunk.js",
+    "static/js/2.c15a79c3.chunk.js.map": "/games-app/static/js/2.c15a79c3.chunk.js.map",
     "index.html": "/games-app/index.html",
-    "static/css/main.975750cb.chunk.css.map": "/games-app/static/css/main.975750cb.chunk.css.map",
-    "static/js/2.a56a2e9d.chunk.js.LICENSE.txt": "/games-app/static/js/2.a56a2e9d.chunk.js.LICENSE.txt",
+    "static/css/main.07cb4ac8.chunk.css.map": "/games-app/static/css/main.07cb4ac8.chunk.css.map",
+    "static/js/2.c15a79c3.chunk.js.LICENSE.txt": "/games-app/static/js/2.c15a79c3.chunk.js.LICENSE.txt",
     "static/media/index.css": "/games-app/static/media/Roboto-Regular.ffdb6afa.eot",
     "static/media/bookmark.8d74d328.svg": "/games-app/static/media/bookmark.8d74d328.svg",
     "static/media/search.da3387c7.svg": "/games-app/static/media/search.da3387c7.svg",
@@ -17,8 +17,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.41ef15c2.js",
-    "static/js/2.a56a2e9d.chunk.js",
-    "static/css/main.975750cb.chunk.css",
-    "static/js/main.49e4b58c.chunk.js"
+    "static/js/2.c15a79c3.chunk.js",
+    "static/css/main.07cb4ac8.chunk.css",
+    "static/js/main.693765fc.chunk.js"
   ]
 }
