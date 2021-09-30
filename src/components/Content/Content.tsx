@@ -37,8 +37,8 @@ export const Content: React.FC<{}> = (props): JSX.Element => {
 
   const handleScroll = (e: React.MouseEvent<HTMLDivElement>) => {
     if (
-      ref.current!.scrollHeight - ref.current!.clientHeight ===
-      ref.current!.scrollTop
+      ref.current!.scrollTop + ref.current!.clientHeight >=
+      ref.current!.scrollHeight - 100
     ) {
       setIsMaxScroll((state) => {
         return true;
